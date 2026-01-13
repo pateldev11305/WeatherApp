@@ -111,9 +111,23 @@ p{
         justify-content: flex-start;
     }
 
+    /* Form fixes */
     .weatherForm {
         max-width: 95%;
+        flex-direction: column;       /* Stack input and button */
+        gap: 10px;                    /* Space between input and button */
         justify-content: center;
+        align-items: center;          /* Center horizontally */
+    }
+
+    .cityInput {
+        width: 90%;                   /* Make input full width */
+        font-size: 1.8rem;            /* Adjust font for small screens */
+    }
+
+    button[type="submit"] {
+        width: 50%;                   /* Make button smaller and centered */
+        font-size: 1.8rem;
     }
 
     .card {
@@ -125,10 +139,11 @@ p{
     }
 
     .weatherEmoji {
-        margin: 0 0 10px 0;
+        margin: 0 auto 10px auto;     /* Center emoji horizontally */
         font-size: clamp(5rem, 20vw, 12rem); 
         width: 80%;            
         flex: unset;           
+        text-align: center;            /* Center the emoji inside */
     }
 
     .weatherData {
