@@ -7,18 +7,27 @@ body{
     align-items: center;
 }
 .weatherForm{
-    margin:20px;
+    margin: 20px;
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    gap: 10px; 
+    flex-wrap: nowrap;
+    justify-content: center;
 }
 .cityInput{
+    flex: 1;
     padding:10px;
     font-size:2rem;
     font-weight:bold;
     border:2px solid hsl(0, 0%, 0%);
     border-radius: 10px;
-    margin:10px;
+    margin:0px;
     width:300px;
+
 }
 button[type="submit"]{
+    flex: 0 0 auto; 
     padding:10px 20px;
     font-weight:bold;
     font-size:2rem;
@@ -32,7 +41,7 @@ button[type="submit"]:hover{
     background-color:hsl(122, 39%, 40%);
 }
 .card{
-    background: linear-gradient(180deg,hsl(210, 100%, 49%), hsl(198, 246, 250));
+    background: black;
     padding:50px;
     box-shadow:2px 2px 5px rgba(0, 0, 0, 0.5);
     border-radius:15px;
