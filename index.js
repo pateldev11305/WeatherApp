@@ -88,7 +88,7 @@ function setCardBackground(weatherId){
     else if (weatherId === 800){
         bg = "linear-gradient(180deg, #85efe8ff, #e2b15eff)"; // clear
     }
-    else{
+    else {
         bg = "linear-gradient(180deg, #28eff6ff, #d6dde9ff)"; // clouds
     }
 
@@ -124,5 +124,6 @@ function displayError(message){
 
     card.textContent=" ";
     card.style.display="flex";
+    card.style.background = "linear-gradient(180deg, #212121ff, #dededeff)";
     card.appendChild(errorDisp);
 }
