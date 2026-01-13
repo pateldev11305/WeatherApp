@@ -1,0 +1,97 @@
+body{
+    font-family:'Arial, sans-serif';
+    background-color:hsl(0, 10%, 78%);
+    margin:0;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.weatherForm{
+    margin:20px;
+}
+.cityInput{
+    padding:10px;
+    font-size:2rem;
+    font-weight:bold;
+    border:2px solid hsl(0, 0%, 0%);
+    border-radius: 10px;
+    margin:10px;
+    width:300px;
+}
+button[type="submit"]{
+    padding:10px 20px;
+    font-weight:bold;
+    font-size:2rem;
+    background-color:hsl(122, 39%, 50%);
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+button[type="submit"]:hover{
+    background-color:hsl(122, 39%, 40%);
+}
+.card{
+    background: linear-gradient(180deg,hsl(210, 100%, 49%), hsl(198, 246, 250));
+    padding:50px;
+    box-shadow:2px 2px 5px rgba(0, 0, 0, 0.5);
+    border-radius:15px;
+    min-width:300px;
+
+    display: flex;
+    flex-direction: row;   
+    align-items: center;
+    gap: 40px;
+}
+
+
+h1{
+    font-size:3.5rem;
+    margin-top:0;
+    text-align: center;
+}
+p{
+    font-size:2rem;
+    margin:5px 0;
+}
+.cityDisp{
+    font-size:3.5rem;
+    font-weight:bold;
+    color:rgba(0, 0, 0, 0.75);
+    margin-bottom:25px;
+    margin-top:0;
+}
+.tempDisp{
+    font-size:3.5rem;
+    font-weight:bold;
+    color:rgba(0, 0, 0, 0.75);
+    margin-bottom:10px;
+    margin-top:0;
+}
+.humidityDisp{
+    font-weight:bold;
+    margin-bottom:15px;
+    color:rgba(0, 0, 0, 0.75);
+}
+.descDisp{
+    font-size:3.5rem;
+    font-style:italic;
+    margin-bottom:0px;
+    font-weight:bold;
+    color:rgba(0, 0, 0, 0.75);
+}
+.weatherEmoji{
+    font-size: 20rem;
+    margin: 0;
+    line-height: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.errorDisp{
+    font-size:2.5rem;
+    font-weight:bold;
+    margin-bottom:0;
+
+}
