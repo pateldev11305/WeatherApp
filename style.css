@@ -114,19 +114,19 @@ p{
     /* Form fixes */
     .weatherForm {
         max-width: 95%;
-        flex-direction: column;       /* Stack input and button */
-        gap: 10px;                    /* Space between input and button */
+        flex-direction: column;       
+        gap: 10px;                    
         justify-content: center;
-        align-items: center;          /* Center horizontally */
+        align-items: center;          
     }
 
     .cityInput {
-        width: 90%;                   /* Make input full width */
-        font-size: 1.8rem;            /* Adjust font for small screens */
+        width: 90%;                   
+        font-size: 1.8rem;            
     }
 
     button[type="submit"] {
-        width: 50%;                   /* Make button smaller and centered */
+        width: 50%;                   
         font-size: 1.8rem;
     }
 
@@ -136,14 +136,17 @@ p{
         gap: 15px;              
         padding: 20px;          
         max-width: 95%;
+        text-align: center;
+        align-items: center;
+        
     }
 
     .weatherEmoji {
-        margin: 0 auto 10px auto;     /* Center emoji horizontally */
+        margin: 0 auto 10px auto;     
         font-size: clamp(5rem, 20vw, 12rem); 
         width: 80%;            
         flex: unset;           
-        text-align: center;            /* Center the emoji inside */
+        text-align: center;            
     }
 
     .weatherData {
